@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew Paul McGuire | Infrastructure Portfolio</title>
+    <style>
+        :root {
+            --bg-primary: #0d0e12;
+            --bg-secondary: #16181d;
+            --accent: #e82127; /* Clean, energetic red accent */
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --border: #2d3139;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 4rem 2rem 2rem 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0 0 0.5rem 0;
+            letter-spacing: -0.05em;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .contact-bar a {
+            color: var(--text-main);
+            text-decoration: none;
+            border-bottom: 1px solid var(--accent);
+            padding-bottom: 2px;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: var(--text-main);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .tag {
+            background: rgba(232, 33, 39, 0.1);
+            color: var(--accent);
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        /* Timeline Styling */
+        .timeline-section {
+            margin-top: 4rem;
+        }
+
+        .timeline {
+            border-left: 2px solid var(--border);
+            padding-left: 1.5rem;
+            margin-left: 0.5rem;
+        }
+
+        .timeline-event {
+            position: relative;
+            margin-bottom: 2.5rem;
+        }
+
+        .timeline-event::before {
+            content: '';
+            position: absolute;
+            left: -2.05rem;
+            top: 0.25rem;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--accent);
+            border: 3px solid var(--bg-primary);
+        }
+
+        .time {
+            font-weight: bold;
+            color: var(--accent);
+            font-size: 0.9rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Matthew Paul McGuire</h1>
+        <div class="subtitle">Systems Designer &amp; Sustainable Infrastructure Developer</div>
+        <div class="contact-bar">
+            <span>📍 Haralson County, GA</span>
+            <span>📞 +1 (470) 874 - 0609 Ext. 0010</span>
+            <span>✉️ <a href="mailto:mattmcguire021@gmail.com">mattmcguire021@gmail.com</a></span>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Technical Evidence of Excellence</h2>
+            <p style="color: var(--text-muted); max-width: 800px;">
+                Direct project logs, data modeling, and documentation tracing physical development, hydrological modeling, and narrative systems design.
+            </p>
+
+            <div class="grid">
+                <!-- PHOTO/MAP CARD -->
+                <div class="card">
+                    <span class="tag">Photos &amp; Mapping</span>
+                    <h3>I-20 Eco-Hub Site Plans</h3>
+                    <p>Visual mapping, site footprint layouts, and local topography models of the Tallapoosa Basin infrastructure site.</p>
+                    <p style="font-size: 0.85rem; color: var(--text-muted);"><em>[Upload your site photos or Fusion 3D renders to your repository and link them here]</em></p>
+                </div>
+
+                <!-- AUDIO CARD -->
+                <div class="card">
+                    <span class="tag">Audio &amp; Field Records</span>
+                    <h3>Stream Float Testing Logs</h3>
+                    <p>Field audio logs and step-by-step documentation recording flow rates, fluid dynamics, and environmental site conditions.</p>
+                    <audio controls style="width: 100%; margin-top: 1rem;">
+                        <source src="audio/stream-test.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <!-- LITERATURE CARD -->
+                <div class="card">
+                    <span class="tag">Literature &amp; Briefings</span>
+                    <h3>Technical Proposals</h3>
+                    <p>Formal project briefs, micro-grid calculations, and the complete creative pitch bible for "The WRabid" series.</p>
+                    <p style="font-size: 0.85rem; color: var(--text-muted);"><em>[Upload PDF/MD text documents to your repository to let recruiters download directly]</em></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TIMELINE SECTION -->
+        <section class="timeline-section">
+            <h2>Project Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-event">
+                    <span class="time">2024 - Present</span>
+                    <h3>Forestry &amp; Conservation Management</h3>
+                    <p>Established restorative Timber Stand Improvement (TSI) frameworks and native riparian buffer zone protection on private acreage in Haralson County.</p>
+                </div>
+                <div class="timeline-event">
+                    <span class="time">October 2025</span>
+                    <h3>Tallapoosa Basin Hydrological Research</h3>
+                    <p>Initiated hydrological modeling and physical fluid testing to establish baseline hydro-electric potential in regional stream currents.</p>
+                </div>
+                <div class="timeline-event">
+                    <span class="time">January 2026</span>
+                    <h3>"The WRabid" Creative Development</h3>
+                    <p>Developed a comprehensive narrative universe and design guidelines, packaging a professional series pitch bible.</p>
+                </div>
+                <div class="timeline-event">
+                    <span class="time">July 2026</span>
+                    <h3>Eco-Infrastructure Hub Master Plan</h3>
+                    <p>Synthesized stream flow data, solar capture profiles, and strategic highway location planning to design a sustainable energy and fleet-servicing blueprint.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2026 Matthew Paul McGuire. Built on First Principles.
+    </footer>
+
+</body>
+  </html>
